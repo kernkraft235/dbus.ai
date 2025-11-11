@@ -1,0 +1,118 @@
+drawfps: true
+
+camera:
+  fov: 155
+  near: 0.1
+  far: 100
+  position_z: 2.67
+
+renderer:
+  alpha: true
+  antialias: true
+  pixel_ratio_cap: 2
+
+shader:
+  time_increment: 0.01
+  glitch_trigger_threshold: 0.99
+  glitch_noise_speed: 8.0
+  glitch_strength_noise_speed: 12.0
+  glitch_strength_variation: 0.3
+  glitch_strength_base: 0.3
+  block_density: 30.0
+  block_trigger_threshold: 0.97
+  block_noise_speed: 4.0
+  glitch_offset_range_x: 0.08
+  glitch_offset_range_y: 0.04
+  block_offset_range_x: 0.12
+  wave_frequency: 12.0
+  wave_speed: 0.4
+  wave_amplitude: 0.001
+  chromatic_aberration_scale: 0.02
+  grain_strength: 0.015
+  grain_noise_scale: 1500.0
+  grain_noise_speed: 40.0
+  scan_speed: 0.8
+  refresh_line_sharpness: 300.0
+  refresh_line_intensity: 0.4
+  refresh_glow_sharpness: 30.0
+  refresh_glow_intensity: 0.1
+  scanline_density: 2.0
+  scanline_mix: 0.05
+  scanline_base: 0.95
+  pulse_frequency: 0.4
+  pulse_amplitude: 0.015
+  pulse_base: 0.985
+  vignette_inner: 0.6
+  vignette_outer: 2.0
+  noise_scale: 5.0
+  noise_speed: 0.15
+  noise_intensity: 0.04
+  glow_power: 1.5
+  glow_intensity: 0.2
+  color_r_gain: 1.1
+  color_g_gain: 0.12
+  color_b_gain: 0.06
+  refresh_line_color_scale: 0.5
+  glitch_invert_mix: 0.3
+  glitch_color_r_multiplier: 1.2
+  glitch_color_g_add: 0.2
+  glitch_color_b_add: 0.1
+  band_noise_threshold: 0.75
+  band_noise_speed: 25.0
+  band_noise_strength_r: 0.4
+  band_noise_strength_g: 0.2
+  band_noise_strength_b: 0.6
+  alpha_scale: 0.25
+  alpha_base: 0.12
+
+particles:
+  count: 10000
+  base_color_hex: 0xff0000
+  size: 0.0046
+  opacity: 0.5
+  blending: additive
+  size_attenuation: true
+  color_variation_min: 0.8
+  color_variation_range: 0.2
+  rotation_speed_y: 0.001
+  rotation_speed_x: 0.0005
+  rotation_speed_z: 0.00025
+  cluster_probability: 0.23
+  cluster_offset_min: 0.5
+  cluster_offset_variation: 0.5
+  size_base: 0.008
+  size_random: 0.01
+  size_distance_scale: 1.5
+  size_distance_divisor: 10
+  neighbor_distance: 0.8
+  neighbor_count: 8
+  pulse_trigger_interval: 0.4
+  pulse_trigger_probability: 0.12
+  pulse_duration: 1.0
+  pulse_chain_spacing: 0.12
+  pulse_chain_duration_scale: 0.05
+  pulse_particle_duration: 0.8
+  pulse_line_distance: 1.0
+  pulse_line_opacity_scale: 0.4
+  pulse_line_color_hex: 0xffffff
+
+trails:
+  tracked_particles: 1000
+  length: 1000
+  color_hex: 0xff0000
+  opacity: 0.15
+  linewidth: 10
+
+markers:
+  sphere_radius: 0.08
+  sphere_segments: 16
+  ring_inner_radius: 0.12
+  ring_outer_radius: 0.15
+  ring_segments: 32
+  ring_opacity: 0.0
+  pulse_scale_speed: 2.0
+  pulse_scale_amplitude: 0.1
+  ring_rotation_speed: 0.02
+  label_offset_y: 40
+  label_margin: 20
+  label_min_opacity: 0.3
